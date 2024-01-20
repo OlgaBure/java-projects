@@ -34,10 +34,14 @@ public class Oveja extends Animal {
     // TOsTRING
     @Override
     public String toString() {
-        return super.toString() + " da al trimestre " + ;
+        return super.toString() + " da al trimestre " + toLanaOrdenada();
     }
 
     public String toLanaOrdenada(){
-        StringBuilder sb = new StringBuilder()
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < metrosLana.length; i++) {
+            sb.append(String.format("%0.2f" , metrosLana[i])).append(" - ");
+        }
+        return sb.toString();
     }
 }
