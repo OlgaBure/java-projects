@@ -29,6 +29,12 @@ public class Vaca extends Animal {
             leche[i]= (float)(Math.random()*10);
         }
     }
+
+    @Override
+    public double media() {
+        return 0;
+    }
+
     //--------------GETTER Y SETTER ------------------
     public float[] getLeche() {
         return leche;

@@ -3,7 +3,13 @@ import java.util.Arrays;
 public class Granja {
     public Animal [] listaAnimales;
     public Granja(){
-        this(20);
+        this(10);
+    }
+
+    public void media (){
+        for (int i = 0; i < listaAnimales.length; i++) {
+            System.out.println(listaAnimales[i] + " produce de media " + listaAnimales[i].media());
+        }
     }
     @Override
     public String toString() {

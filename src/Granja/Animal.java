@@ -1,6 +1,6 @@
 package Granja;
 
-public class Animal {
+public abstract class Animal {
     //--------------------atributos--------------------------------------
     protected String nombre;
     protected   int edad;
@@ -37,6 +37,7 @@ public class Animal {
         this.peso = peso;
     }
 
+    public abstract double media();
     @Override
     public String toString() {
         return this.getClass().getSimpleName()+"{" +

@@ -34,7 +34,7 @@ public class Tester {
         Cerdo cerdo = new Cerdo();
         Vaca vaca = new Vaca();
         Oveja oveja = new Oveja();
-        Granja granja = new Granja();
+        Granja granja = new Granja(10);
         Animal animal = new Animal();
         Animal otro= creaAnimal();
         System.out.println(otro);

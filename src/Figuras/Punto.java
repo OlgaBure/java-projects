@@ -6,6 +6,7 @@ public class Punto {
     private double y;
 
 //los constructores
+
     public Punto (){
         x = Math.random()*100; // x=10; constructor vlae para inicializar valores de atributos
         y = Math.random()*100;
@@ -19,9 +20,6 @@ public class Punto {
      }
     public double getY (){
         return y;
-    }
-    public double CalcularDistanciaDesde(Punto otroPunto){
-        return Math.sqrt(Math.pow(this.x-otroPunto.x,2)+Math.pow(this.y-otroPunto.y,2));
     }
 
     public double calcularDistanciaDesde(Punto otroPunto){

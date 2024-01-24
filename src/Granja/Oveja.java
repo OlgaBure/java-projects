@@ -13,6 +13,12 @@ public class Oveja extends Animal {
             metrosLana[i]=(int)(Math.random()*10);
         }
     }
+
+    @Override
+    public double media() {
+        return 0;
+    }
+
     public Oveja(String nombre, int peso, int edad, int[] metrosLana) { //argumentos de entrada
         super(nombre,peso, edad);
         this.metrosLana=metrosLana;

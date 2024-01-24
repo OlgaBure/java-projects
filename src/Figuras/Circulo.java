@@ -6,25 +6,30 @@ public class Circulo {
     private double Radio;
 
     public Circulo(Punto puntoCentro, double radio) {
-        Punto PuntoCentro = new Punto(2,3);
-        Radio = radio;
+        Punto PuntoCentro = new Punto(2, 3);
+        Radio = 1;
     }
-    public Circulo(double x,double y,double radio){
-        PuntoCentro = new Punto(x,y);
-        Radio=radio;
+
+    public Circulo(double x, double y, double radio) {
+        PuntoCentro = new Punto(x, y);
+        this.Radio = radio;
     }
-    public double getRadio(){
+
+    public Circulo() {
+
+    }
+
+    public double getRadio() {
         return Radio;
     }
-    public Punto getPuntoCentro(){
+
+    public Punto getPuntoCentro() {
         return PuntoCentro;
     }
 
-    public  double calcularDistanciaDesde(Punto otroPunto){
-        return PuntoCentro.calcularDistanciaDesde(otroPunto)-Radio;
+    public double calcularDistanciaDesde(Punto otroPunto) {
+        return PuntoCentro.calcularDistanciaDesde(otroPunto) - Radio;
     }
-
-
 
     @Override
     public String toString() {
@@ -32,3 +37,5 @@ public class Circulo {
                 '}';
     }
 }
+
+
