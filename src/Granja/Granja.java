@@ -17,7 +17,7 @@ public class Granja {
                 "listaAnimales=" + Arrays.toString(listaAnimales) +
                 '}';
     }
-    private Granja(int tamanyo){
+    Granja(int tamanyo){
        listaAnimales=new Animal[tamanyo];
         for(int i = 0; i < listaAnimales.length/2; i++) {
             int dado = (int)(Math.random()*5);
@@ -29,9 +29,6 @@ public class Granja {
                         listaAnimales[i] = new Vaca();
                         break;
                     case 2:
-                        listaAnimales[i] = new Oveja();
-                        break;
-                    case 3:
                         listaAnimales[i] = new Cerdo();
                         break;
                     default:

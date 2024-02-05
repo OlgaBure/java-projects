@@ -24,6 +24,12 @@ public class Cerdo extends Animal{
             carne[i]=(double)(Math.random()*10);
         }
     }
+
+    @Override
+    public double media() {
+        return 0;
+    }
+
     //GETTER Y SETTER
     public double[] getCarne(){
         return carne;

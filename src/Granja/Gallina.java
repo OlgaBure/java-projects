@@ -23,6 +23,12 @@ public class Gallina extends Animal{
             huevosSemana[i]=(int)(Math.random()*10);
         }
     }
+
+    @Override
+    public double media() {
+        return 0;
+    }
+
     //GETTER Y SETTER
     public int[]getHuevosSemana(){
         return huevosSemana;

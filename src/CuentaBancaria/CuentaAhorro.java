@@ -15,12 +15,11 @@ public class CuentaAhorro extends CuentaCorriente{
         this.saldo = saldo;
     }
 
-    public CuentaAhorro(Titular titularCuenta, String numeroCuenta, double interes) {
-        this(titularCuenta,numeroCuenta,15.3,interes);
-    }
-
     public CuentaAhorro (Titular titularCuenta, String numeroCuenta){
         this(titularCuenta,numeroCuenta,15.3, 2.5);
+    }
+
+    public CuentaAhorro(String titular, String es345353453345, double saldo, double interes) {
     }
 
     @Override
